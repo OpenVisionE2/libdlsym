@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libdlsym
+Description: Helper lib to ld_preload multiple libs
+Version: @VERSION@
+Libs: -L${libdir} -ldlsym
+Cflags: -I${includedir}
