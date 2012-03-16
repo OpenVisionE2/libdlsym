@@ -31,10 +31,6 @@ AC_TYPE_OFF_T
 AC_TYPE_SIZE_T
 AC_TYPE_SSIZE_T
 
-# Checks for library functions.
-AC_FUNC_REALLOC
-AC_CHECK_FUNCS([dup2 memset pipe2 strtoul])
-
 AC_CONFIG_FILES([
 	Makefile
 	src/Makefile

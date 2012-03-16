@@ -1,4 +1,4 @@
-#include "libpagecache-config.h"
+#include "libdlsym-config.h"
 #include <dlfcn.h>
 #include <stdio.h>
 #include <stdlib.h>
