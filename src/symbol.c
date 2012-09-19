@@ -6,7 +6,7 @@
 #include <string.h>
 
 #define SYMBOL_MAX_NAME 32
-#define SYMBOL_CACHE_SIZE 32
+#define SYMBOL_CACHE_SIZE 64
 
 struct symbol
 {
