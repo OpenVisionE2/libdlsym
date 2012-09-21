@@ -50,10 +50,8 @@ void *find_symbol(void *hnd, const char *symbol, void *repl)
 			}
 			if (!strncmp(symbol, symbol_cache[i].name, SYMBOL_MAX_NAME)) {
 				addr = symbol_cache[i].addr;
-				if (addr == repl) {
+				if (addr == repl)
 					fprintf(stderr, "FATAL!!! libdlsym detected a potential endless loop.\n'%s' redirection from %p to %p.\nPlease check your preload libs!", symbol, addr, repl);
-					exit(1);
-				}
 				if (repl)
 					symbol_cache[i].addr = repl;
 				pthread_mutex_unlock(&cache_mutex);
